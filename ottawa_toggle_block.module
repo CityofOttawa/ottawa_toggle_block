@@ -5,3 +5,14 @@
  */
 
 include_once 'ottawa_toggle_block.features.inc';
+
+/**
+ * Implements template_preprocess_entity().
+ *
+ * @param array $var a keyed array with the entity data and meta data.
+ */
+function ottawa_toggle_block_preprocess_entity(&$var) {
+  if ($var['entity_type'] == 'bean' && $var['elements']['#bundle'] == 'toggle_block') {
+    
+  }
+}
