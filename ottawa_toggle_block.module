@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ottawa_toggle_block feature.
+ */
+
+include_once 'ottawa_toggle_block.features.inc';
