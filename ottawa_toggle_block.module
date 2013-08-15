@@ -13,6 +13,36 @@ include_once 'ottawa_toggle_block.features.inc';
  */
 function ottawa_toggle_block_preprocess_entity(&$var) {
   if ($var['entity_type'] == 'bean' && $var['elements']['#bundle'] == 'toggle_block') {
-    
+    $bean = $var['bean'];
+    // Hide B Content and Title - To display only A
+    if( $bean->field_block_state[LANGUAGE_NONE][0]['value'] == 1 ) {
+       unset( $var['content']['field_b_title'] );
+       unset( $var['content']['field_b_body'] );
+    }
+    // Hide A Content and B Title - To display only B
+    else {
+      unset( $var['content']['field_b_title'] );
+      unset( $var['content']['field_a_body'] );  
+    }
+  }
+}
+/**
+ * Implements template_block_preprocess_block().
+ * 
+ * @param array $variables a keyed array with they block data for the toggle bean.
+ */
+function ottawa_toggle_block_preprocess_block(&$variables) {
+  if( isset($variables['elements']['bean']) ) {
+    foreach( $variables['elements']['bean'] as $key => $bean ) {
+      if( is_array( $bean ) ) {
+        if( isset($bean['#entity_type']) && isset($bean['#bundle']) ) {
+          if( $bean['#entity_type'] == 'bean' && $bean['#bundle'] == 'toggle_block' ) {
+            if( $bean['#entity']->field_block_state[LANGUAGE_NONE][0]['value'] == '0' ) {
+              $variables['block']->subject = $bean['field_b_title'][0]['#markup'];
+            }
+          }
+        } 
+      }
+    }
   }
 }

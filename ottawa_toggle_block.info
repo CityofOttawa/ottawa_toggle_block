@@ -1,4 +1,4 @@
-name = ottawa_toggle_block
+name = Ottawa Toggle Block
 description = A block type for beans that have content for an on and off state.
 core = 7.x
 package = City of Ottawa
