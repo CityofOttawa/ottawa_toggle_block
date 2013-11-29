@@ -10,7 +10,7 @@ include_once 'ottawa_toggle_block.features.inc';
 /**
  * Implements hook_entity_info_alter().
  */
-function compendium_entity_info_alter(&$entity_info) {
+function ottawa_toggle_block_entity_info_alter(&$entity_info) {
     if ( isset($entity_info['toggle_block']) ) {
         $entity_info['toggle_block']['view modes']['toggle_icons'] = array(
             'label' => t('Toggle Group Icons'),
