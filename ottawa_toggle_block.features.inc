@@ -12,4 +12,8 @@ function ottawa_toggle_block_ctools_plugin_api() {
   if ($module == "bean_admin_ui" && $api == "bean") {
     return array("version" => "5");
   }
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
