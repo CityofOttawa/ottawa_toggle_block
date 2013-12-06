@@ -3,7 +3,7 @@
  */
 
 /* Remove the top and bottom padding from the toggle block pane */
-.pane-bean-homepage-toggle-group {
+.cityott-region .panel-pane.pane-bean-homepage-toggle-group {
   padding: 0 20px;
 }
 
@@ -35,4 +35,11 @@
 .bean-toggle-block-group .field-name-field--a-icon {
   width: 50%;
   margin: 0 auto;
+
+}
+
+/* Remove the bottom margin from the icon image */
+.bean-toggle-block-group .field-name-field--b-icon img,
+.bean-toggle-block-group .field-name-field--a-icon img {
+  margin-bottom: 0;
 }
