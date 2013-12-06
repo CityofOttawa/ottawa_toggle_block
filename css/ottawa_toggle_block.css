@@ -11,6 +11,7 @@
 }
 
 /* Center the title and display it as normal text */
+.bean-toggle-block-group .field-name-field-b-title,
 .bean-toggle-block-group .field-name-title-field {
   text-align: center;
   font-weight: normal !important; /* overriding !important in existing CSS */
