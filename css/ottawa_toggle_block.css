@@ -2,6 +2,11 @@
  * Dave Bagler, 2013 12 06
  */
 
+/* Remove the top and bottom padding from the toggle block pane */
+.pane-bean-homepage-toggle-group {
+  padding: 0 20px;
+}
+
 /* Center the label and display it in all CAPS and bold */
 .bean-toggle-block-group .field-name-field--a-label,
 .bean-toggle-block-group .field-name-field--b-label {
