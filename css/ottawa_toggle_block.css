@@ -10,7 +10,10 @@
   font-weight: bold;
 }
 
-/* Center the title */
+/* Center the title and display it as normal text */
 .bean-toggle-block-group .field-name-title-field {
   text-align: center;
+  font-weight: normal !important; /* overriding !important in existing CSS */
+  font-size: 100% !important; /* overriding !important in existing CSS */
+  line-height: 1.2em;
 }
