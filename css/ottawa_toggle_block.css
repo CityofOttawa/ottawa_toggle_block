@@ -17,6 +17,7 @@
   font-weight: normal !important; /* overriding !important in existing CSS */
   font-size: 100% !important; /* overriding !important in existing CSS */
   line-height: 1.2em;
+  margin: 0;
 }
 
 .bean-toggle-block-group .field-name-field-toggle-blocks {
