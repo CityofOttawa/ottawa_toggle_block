@@ -31,14 +31,14 @@ function ottawa_toggle_block_preprocess_entity(&$var) {
         if( $bean->field_block_state[LANGUAGE_NONE][0]['value'] == 1 ) {
             unset( $var['content']['field_b_title'] );
             unset( $var['content']['field_b_body'] );
-            unset( $var['contnet']['field__b_icon'] );
+            unset( $var['content']['field__b_icon'] );
             unset( $var['content']['field__b_label'] );
         }
         // Hide A Content and B Title - To display only B
         else {
             unset( $var['content']['field_a_title'] );
             unset( $var['content']['field_a_body'] );
-            unset( $var['contnet']['field__a_icon'] );
+            unset( $var['content']['field__a_icon'] );
             unset( $var['content']['field__a_label'] );
         }
     }
@@ -46,7 +46,7 @@ function ottawa_toggle_block_preprocess_entity(&$var) {
 
 /**
  * Implements template_block_preprocess_block().
- * 
+ *
  * @param array $variables a keyed array with they block data for the toggle bean.
  */
 function ottawa_toggle_block_preprocess_block(&$variables) {
@@ -59,7 +59,7 @@ function ottawa_toggle_block_preprocess_block(&$variables) {
               $variables['block']->subject = $bean['field_b_title'][0]['#markup'];
             }
           }
-        } 
+        }
       }
     }
   }
