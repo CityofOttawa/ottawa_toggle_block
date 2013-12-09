@@ -27,6 +27,7 @@ function ottawa_toggle_block_field_group_info() {
       1 => 'title_field',
       2 => 'field__a_label',
       3 => 'field__a_icon',
+      4 => 'field__a_link',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -51,12 +52,13 @@ function ottawa_toggle_block_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '\'B\' Content',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_b_body',
       1 => 'field_b_title',
       2 => 'field__b_label',
       3 => 'field__b_icon',
+      4 => 'field__b_link',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

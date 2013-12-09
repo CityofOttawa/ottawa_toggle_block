@@ -38,13 +38,13 @@ function ottawa_toggle_block_strongarm() {
           'weight' => '0',
         ),
         'revision' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
         'view_mode' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(

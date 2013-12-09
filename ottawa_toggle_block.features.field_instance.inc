@@ -20,7 +20,7 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 10,
       ),
       'toggle_icons' => array(
         'label' => 'hidden',
@@ -28,9 +28,20 @@ function ottawa_toggle_block_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '[bean:field__a_link]',
+            'linked' => 1,
+          ),
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'bean',
@@ -158,12 +169,24 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 4,
       ),
@@ -193,6 +216,64 @@ function ottawa_toggle_block_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'bean-toggle_block-field__a_link'
+  $field_instances['bean-toggle_block-field__a_link'] = array(
+    'bundle' => 'toggle_block',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'toggle_icons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field__a_link',
+    'label' => '\'A\' Link',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'bean-toggle_block-field__b_icon'
   $field_instances['bean-toggle_block-field__b_icon'] = array(
     'bundle' => 'toggle_block',
@@ -203,7 +284,7 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 11,
       ),
       'toggle_icons' => array(
         'label' => 'hidden',
@@ -211,9 +292,20 @@ function ottawa_toggle_block_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '[bean:field__b_link]',
+            'linked' => 1,
+          ),
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'bean',
@@ -346,7 +438,19 @@ function ottawa_toggle_block_field_default_field_instances() {
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 5,
       ),
@@ -376,6 +480,64 @@ function ottawa_toggle_block_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'bean-toggle_block-field__b_link'
+  $field_instances['bean-toggle_block-field__b_link'] = array(
+    'bundle' => 'toggle_block',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'toggle_icons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field__b_link',
+    'label' => '\'B\' Link',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'bean-toggle_block-field_a_body'
   $field_instances['bean-toggle_block-field_a_body'] = array(
     'bundle' => 'toggle_block',
@@ -386,7 +548,19 @@ function ottawa_toggle_block_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 3,
       ),
@@ -438,7 +612,19 @@ function ottawa_toggle_block_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 4,
       ),
@@ -490,7 +676,19 @@ function ottawa_toggle_block_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 2,
       ),
@@ -503,9 +701,21 @@ function ottawa_toggle_block_field_default_field_instances() {
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '[bean:field__b_link]',
+            'linked' => 1,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'bean',
@@ -587,7 +797,19 @@ function ottawa_toggle_block_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -600,9 +822,21 @@ function ottawa_toggle_block_field_default_field_instances() {
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '[bean:field__a_link]',
+            'linked' => 1,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'bean',
@@ -645,6 +879,17 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
           'view_mode' => 'toggle_icons',
         ),
         'type' => 'entityreference_entity_view',
@@ -747,10 +992,12 @@ function ottawa_toggle_block_field_default_field_instances() {
   t('\'A\' Body');
   t('\'A\' Icon');
   t('\'A\' Label');
+  t('\'A\' Link');
   t('\'A\' Title');
   t('\'B\' Body');
   t('\'B\' Icon');
   t('\'B\' Label');
+  t('\'B\' Link');
   t('\'B\' Title');
   t('Block State');
   t('Select \'A\' to display the \'A\' title and body and select \'B\' to display the \'B\' title and body.');
