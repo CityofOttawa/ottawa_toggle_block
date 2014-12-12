@@ -69,6 +69,7 @@ function ottawa_toggle_block_preprocess_entity(&$var) {
  *
  * @param array $variables a keyed array with they block data for the toggle bean.
  */
+/*
 function ottawa_toggle_block_preprocess_block(&$variables) {
   if( isset($variables['elements']['bean']) ) {
     foreach( $variables['elements']['bean'] as $key => $bean ) {
@@ -84,3 +85,4 @@ function ottawa_toggle_block_preprocess_block(&$variables) {
     }
   }
 }
+*/
