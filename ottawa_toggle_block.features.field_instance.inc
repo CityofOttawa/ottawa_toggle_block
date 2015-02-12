@@ -20,12 +20,13 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 7,
       ),
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'conditions' => array(),
           'image_link' => '',
           'image_style' => '',
           'linked_field' => array(
@@ -66,6 +67,20 @@ function ottawa_toggle_block_field_default_field_instances() {
       'module' => 'image',
       'settings' => array(
         'caption_from_title' => 0,
+        'filefield_sources' => array(
+          'filefield_sources' => array(),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
         'insert' => 0,
         'insert_absolute' => 0,
         'insert_class' => '',
@@ -169,12 +184,13 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 6,
       ),
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'conditions' => array(),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -225,22 +241,9 @@ function ottawa_toggle_block_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 12,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'toggle_icons' => array(
         'label' => 'above',
@@ -284,12 +287,13 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 8,
       ),
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'conditions' => array(),
           'image_link' => '',
           'image_style' => '',
           'linked_field' => array(
@@ -330,6 +334,20 @@ function ottawa_toggle_block_field_default_field_instances() {
       'module' => 'image',
       'settings' => array(
         'caption_from_title' => 0,
+        'filefield_sources' => array(
+          'filefield_sources' => array(),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
         'insert' => 0,
         'insert_absolute' => 0,
         'insert_class' => '',
@@ -433,12 +451,13 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'toggle_icons' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'conditions' => array(),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -489,22 +508,9 @@ function ottawa_toggle_block_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 13,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
       ),
       'toggle_icons' => array(
         'label' => 'above',
@@ -549,6 +555,7 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'conditions' => array(),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -562,7 +569,7 @@ function ottawa_toggle_block_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'ical' => array(
         'label' => 'above',
@@ -613,6 +620,7 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'conditions' => array(),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -626,7 +634,7 @@ function ottawa_toggle_block_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'ical' => array(
         'label' => 'above',
@@ -675,21 +683,8 @@ function ottawa_toggle_block_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'ical' => array(
@@ -702,6 +697,7 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'conditions' => array(),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -754,7 +750,7 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'ical' => array(
         'label' => 'above',
@@ -796,22 +792,9 @@ function ottawa_toggle_block_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'ical' => array(
         'label' => 'above',
@@ -823,6 +806,7 @@ function ottawa_toggle_block_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'conditions' => array(),
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -877,22 +861,8 @@ function ottawa_toggle_block_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-          'view_mode' => 'toggle_icons',
-        ),
-        'type' => 'entityreference_entity_view',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'ical' => array(
@@ -929,6 +899,64 @@ function ottawa_toggle_block_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'bean-toggle_block_group-group_group'
+  $field_instances['bean-toggle_block_group-group_group'] = array(
+    'bundle' => 'toggle_block_group',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Determine if this is an OG group.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'toggle_icons' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'display_label' => 1,
+    'entity_type' => 'bean',
+    'fences_wrapper' => 'div',
+    'field_name' => 'group_group',
+    'label' => 'Group',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'view modes' => array(
+      'full' => array(
+        'custom settings' => FALSE,
+        'label' => 'Full',
+        'type' => 'og_group_subscribe',
+      ),
+      'teaser' => array(
+        'custom settings' => FALSE,
+        'label' => 'Teaser',
+        'type' => 'og_group_subscribe',
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+        'og_hide' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 0,
     ),
   );
 
@@ -1000,6 +1028,8 @@ function ottawa_toggle_block_field_default_field_instances() {
   t('\'B\' Link');
   t('\'B\' Title');
   t('Block State');
+  t('Determine if this is an OG group.');
+  t('Group');
   t('Select \'A\' to display the \'A\' title and body and select \'B\' to display the \'B\' title and body.');
   t('The \'A\' body content of the block.');
   t('The \'A\' title of the block.');
